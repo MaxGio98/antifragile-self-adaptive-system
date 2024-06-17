@@ -1,12 +1,12 @@
 <h1>Engineering Antifragile Self-Adaptive Systems in Service-based Architecture</h1>
 MSc final thesis project by Massimiliano Giovagnola.
-##Project composition
+<h2>Project composition</h2>
 This project is an Antifragile System made of the following components:
 1. a [managed system](https://github.com/MaxGio98/antifragile-self-adaptive-system/tree/main/VulnerableNode) made of a set of Vulnerable Nodes susceptible to internal and external attacks;
 2. a [managing system](https://github.com/MaxGio98/antifragile-self-adaptive-system/tree/main/Managing), which is responsible of adapting the managed system;
 3. a [infection script](https://github.com/MaxGio98/antifragile-self-adaptive-system/blob/main/infector.py) that externally infects the vulnerable network.
 
-##Installation guide
+<h2>Installation guide</h2>
 The whole Antifragile was developed, run and tested on a Lenovo Ideapad Gaming 3 15ARH05 with the following specifications:
 - CPU: AMD Ryzen 7 4800H, 8 x 2.9 - 4.2 GHz cores
 - GPU: NVIDIA GTX 1650Ti Mobile, 4 GB GDDR6 VRAM
@@ -33,7 +33,7 @@ If you want to run the program as a JAR, go to the folder that contains it and o
 ```
 $ sudo java -jar Managing-0.0.1-SNAPSHOT.jar
 ```
-##Modify network characteristics
+<h2>Modify network characteristics</h2>
 If you don't modify the default network characteristics, contained in the Managing's `application.properties` file, you will create 50 Vulnerable Nodes, with 10 neighbors on average and 5 vulnerability types.
 
 If you're executing the Managing Node through IntelliJ, simply go to the "Managing/src/main/resources" folder and modify the content of `application.properties`.
@@ -51,10 +51,10 @@ sudo vim BOOT-INF/classes/application.properties
 ```
 $ sudo jar uf Managing-0.0.1-SNAPSHOT.jar BOOT-INF/classes/application.properties
 ```
-##Python scripts
-###Infector script
+<h2>Python scripts</h2>
+</h3>Infector script</h3>
 The `infector.py` file, located at the root of the folder, is the responsible for the creations of external attacks to the vulnerable network. After the Managing Node is launched and after the vulnerable network is then ready, you can execute it. If you want to create an homogenous attack, write, as the first argument -1 and, then, the probability value.
-###graph.py
+<h3>graph.py</h3>
 With this tool is possible to observe the network graphically, with an automatic refresh of 5 seconds.
 A node is represented as a colored red or green (depending on its health status) circle, with on top its own IP address and vulnerability type value. A node is a neighbor of an another node if they share a link, i.e., there's a line that connects the two circles.
 
