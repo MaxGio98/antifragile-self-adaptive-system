@@ -1,4 +1,4 @@
-#Engineering Antifragile Self-Adaptive Systems in Service-based Architecture
+<h1>Engineering Antifragile Self-Adaptive Systems in Service-based Architecture</h1>
 MSc final thesis project by Massimiliano Giovagnola.
 ##Project composition
 This project is an Antifragile System made of the following components:
